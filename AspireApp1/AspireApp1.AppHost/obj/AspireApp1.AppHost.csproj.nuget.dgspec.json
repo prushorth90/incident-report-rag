@@ -64,6 +64,10 @@
             "CommunityToolkit.Aspire.Hosting.Ollama": {
               "target": "Package",
               "version": "[13.4.0, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[14.7.1, )"
             }
           },
           "imports": [

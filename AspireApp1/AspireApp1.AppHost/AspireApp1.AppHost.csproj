@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Aspire.Hosting.Ollama" Version="13.4.0" />
+    <PackageReference Include="NSwag.AspNetCore" Version="14.7.1" />
   </ItemGroup>
 
   <ItemGroup>
