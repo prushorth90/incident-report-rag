@@ -107,3 +107,15 @@
 /Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/CommunityToolkit.Aspire.Hosting.Ollama.dll
 /Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/OllamaSharp.dll
 /Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/obj/Debug/net10.0/Aspire/references/IcmChatAPI.ProjectMetadata.g.cs
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/Namotion.Reflection.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NJsonSchema.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NJsonSchema.Annotations.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NJsonSchema.NewtonsoftJson.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NJsonSchema.Yaml.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NSwag.Annotations.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NSwag.AspNetCore.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NSwag.Core.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NSwag.Core.Yaml.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NSwag.Generation.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/bin/Debug/net10.0/NSwag.Generation.AspNetCore.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/obj/Debug/net10.0/AspireApp1.AppHost.sourcelink.json

@@ -2,7 +2,7 @@ using System.Reflection.Metadata.Ecma335;
 
 var builder = DistributedApplication.CreateBuilder(args);
 var ollama = builder.AddOllama("ollama").WithDataVolume();
-ollama.AddModel("chat", "llama3.2");
+var chatModel = ollama.AddModel("chat", "llama3.2");
 
 //builder.AddContainer("open-webui", "ghcr.io/open-webui/open-webui", "main")
  //   .WithHttpEndpoint(port: 3000, targetPort: 8080, name: "http")
@@ -10,7 +10,8 @@ ollama.AddModel("chat", "llama3.2");
  //   .WithLifetime(ContainerLifetime.Persistent)
 //    .WaitFor(ollama);
 
-builder.AddProject<Projects.IcmChatAPI>("icmchatapi");
-
+builder.AddProject<Projects.IcmChatAPI>("icmchatapi")
+    .WithReference(chatModel)
+    .WaitFor(chatModel);
  
 builder.Build().Run();

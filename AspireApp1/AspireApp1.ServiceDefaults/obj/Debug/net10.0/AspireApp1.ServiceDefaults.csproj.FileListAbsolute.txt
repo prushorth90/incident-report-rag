@@ -1,0 +1,13 @@
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.deps.json
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/bin/Debug/net10.0/AspireApp1.ServiceDefaults.pdb
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.csproj.AssemblyReference.cache
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.AssemblyInfo.cs
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.csproj.CoreCompileInputs.cache
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.sourcelink.json
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/refint/AspireApp1.ServiceDefaults.dll
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/AspireApp1.ServiceDefaults.pdb
+/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.ServiceDefaults/obj/Debug/net10.0/ref/AspireApp1.ServiceDefaults.dll

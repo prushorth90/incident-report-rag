@@ -1,15 +1,31 @@
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.Extensions.AI;
+using IcmChatAPI.Models;
+using ChatResponse = IcmChatAPI.Models.ChatResponse;
 namespace IcmChatAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ChatController : ControllerBase
+    public class ChatController: ControllerBase
     {
-        [HttpGet] // <-- Add this line right here!
-        public IActionResult Ping()
+        private readonly IChatClient _chatClient;
+        public ChatController(IChatClient chatClient)
         {
-            return Ok("Pong");
+            _chatClient = chatClient;
+        }
+        [HttpPost]
+        public async Task<ChatResponse> SendQuery([FromBody] ChatRequest query)
+        {
+            List<ChatMessage> messages = [ 
+                new ChatMessage(ChatRole.System, "You are a helpful assistant."),
+                new ChatMessage(ChatRole.User, query.Query)
+            ];
+            var response = await _chatClient.GetResponseAsync(messages, new ChatOptions());
+            return new ChatResponse
+            {
+                Message = response.Text,
+                Status = "Success"
+            };
         }
     }
 }
