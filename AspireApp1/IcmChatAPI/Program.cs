@@ -7,18 +7,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.AddOllamaApiClient("chat").AddChatClient();
 builder.AddServiceDefaults(); 
-builder.Services.ConfigureHttpClientDefaults(http =>
-{
-    http.AddStandardResilienceHandler(options =>
-    {
-        // Give Ollama up to 5 minutes to generate a response
-        options.AttemptTimeout.Timeout = TimeSpan.FromMinutes(5);
-        options.TotalRequestTimeout.Timeout = TimeSpan.FromMinutes(5);
-        
-        // Satisfy the validation rule: SamplingDuration must be >= 2x AttemptTimeout
-        options.CircuitBreaker.SamplingDuration = TimeSpan.FromMinutes(10);
-    });
-});
+builder.Services.AddOllamaResilienceHandlers();
 var app = builder.Build();
 app.MapDefaultEndpoints(); // connec swagger to aspire dashboard
  

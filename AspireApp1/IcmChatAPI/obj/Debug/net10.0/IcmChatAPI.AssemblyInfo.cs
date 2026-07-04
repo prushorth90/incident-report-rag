@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IcmChatAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b25d9ea3acd81f0c011db0346e24c6826bdb783")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+237312afc3ea46dad60f0a56bf4dfa6a431282f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("IcmChatAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IcmChatAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
