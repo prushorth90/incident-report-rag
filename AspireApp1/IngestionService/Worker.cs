@@ -1,14 +1,18 @@
+using Microsoft.Extensions.DataIngestion;
+
 namespace IngestionService;
 
-public class Worker(ILogger<Worker> logger) : BackgroundService
+public class Worker(ILoggerFactory loggerFactory, ILogger<Worker> logger) : BackgroundService
 {
+    const string trackingFilePath = "tracking.txt";
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         var directoryInfo = new DirectoryInfo("icm_incident_dataset");
-
+        await File.Create(trackingFilePath).DisposeAsync();
         while (!stoppingToken.IsCancellationRequested)
         {
-            var filesToProcess = directoryInfo.EnumerateFiles("*.md");
+             var processedFiles =  (await File.ReadAllLinesAsync(trackingFilePath, stoppingToken)).ToHashSet();
+            var filesToProcess = directoryInfo.EnumerateFiles("*.md").Where(file => !processedFiles.Contains(file.Name)).ToList();
 
             if (logger.IsEnabled(LogLevel.Information))
             {
@@ -16,6 +20,18 @@ public class Worker(ILogger<Worker> logger) : BackgroundService
                 logger.LogInformation("Files to process: {files}",
                     string.Join(", ", filesToProcess.Select(f => f.Name)));
             }
+
+            var pipeline = new IngestionPipeline<string>(reader: null, chunker: null, writer: null, loggerFactory: loggerFactory);
+
+            await foreach (var result in pipeline.ProcessAsync(filesToProcess, stoppingToken))
+            {
+                if (!result.Succeeded)
+                {
+                logger.LogError("Failed to process file: {file}", result.DocumentId);
+                }
+            }
+
+            await File.AppendAllLinesAsync(trackingFilePath, filesToProcess.Select(f => f.Name), stoppingToken);
 
             await Task.Delay(1000, stoppingToken);
         }
