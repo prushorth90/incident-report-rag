@@ -14,4 +14,6 @@ builder.AddProject<Projects.IcmChatAPI>("icmchatapi")
     .WithReference(chatModel)
     .WaitFor(chatModel);
  
+ builder.AddProject<Projects.IngestionService>("ingestionservice");
+
 builder.Build().Run();

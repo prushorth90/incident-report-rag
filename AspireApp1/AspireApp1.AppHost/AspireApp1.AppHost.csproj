@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IcmChatAPI\IcmChatAPI.csproj" />
+    <ProjectReference Include="..\IngestionService\IngestionService.csproj" />
   </ItemGroup>
 
 </Project>
