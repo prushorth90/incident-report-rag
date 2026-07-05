@@ -14,4 +14,13 @@
   <ItemGroup>
     <ProjectReference Include="..\AspireApp1.ServiceDefaults\AspireApp1.ServiceDefaults.csproj" />
   </ItemGroup>
+  <ItemGroup>
+
+  <None Update="icm_incident_dataset/**/*.md">
+
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+
+  </None>
+
+</ItemGroup>
 </Project>
