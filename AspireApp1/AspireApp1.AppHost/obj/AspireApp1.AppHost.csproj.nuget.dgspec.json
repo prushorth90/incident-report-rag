@@ -65,6 +65,10 @@
               "target": "Package",
               "version": "[13.4.0, )"
             },
+            "CommunityToolkit.Aspire.Hosting.Sqlite": {
+              "target": "Package",
+              "version": "[13.4.0, )"
+            },
             "NSwag.AspNetCore": {
               "target": "Package",
               "version": "[14.7.1, )"

@@ -194,6 +194,22 @@
           }
         }
       },
+      "CommunityToolkit.Aspire.Hosting.Sqlite/13.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Aspire.Hosting": "13.4.0"
+        },
+        "compile": {
+          "lib/net10.0/CommunityToolkit.Aspire.Hosting.Sqlite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/CommunityToolkit.Aspire.Hosting.Sqlite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Fractions/7.3.0": {
         "type": "package",
         "compile": {
@@ -2023,6 +2039,25 @@
         "lib/net8.0/CommunityToolkit.Aspire.Hosting.Ollama.xml",
         "lib/net9.0/CommunityToolkit.Aspire.Hosting.Ollama.dll",
         "lib/net9.0/CommunityToolkit.Aspire.Hosting.Ollama.xml",
+        "nuget.png"
+      ]
+    },
+    "CommunityToolkit.Aspire.Hosting.Sqlite/13.4.0": {
+      "sha512": "LZ7RGVdbdeajprDvseRcsJY5B3OPwDUnAhnN98bV8LmNwI/J40vZeab9EQHOwDpctGCh2shNYDw12dCcLJSJvA==",
+      "type": "package",
+      "path": "communitytoolkit.aspire.hosting.sqlite/13.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "communitytoolkit.aspire.hosting.sqlite.13.4.0.nupkg.sha512",
+        "communitytoolkit.aspire.hosting.sqlite.nuspec",
+        "lib/net10.0/CommunityToolkit.Aspire.Hosting.Sqlite.dll",
+        "lib/net10.0/CommunityToolkit.Aspire.Hosting.Sqlite.xml",
+        "lib/net8.0/CommunityToolkit.Aspire.Hosting.Sqlite.dll",
+        "lib/net8.0/CommunityToolkit.Aspire.Hosting.Sqlite.xml",
+        "lib/net9.0/CommunityToolkit.Aspire.Hosting.Sqlite.dll",
+        "lib/net9.0/CommunityToolkit.Aspire.Hosting.Sqlite.xml",
         "nuget.png"
       ]
     },
@@ -4237,6 +4272,7 @@
       "Aspire.Hosting.AppHost >= 13.4.4",
       "Aspire.Hosting.Orchestration.osx-arm64 >= 13.4.4",
       "CommunityToolkit.Aspire.Hosting.Ollama >= 13.4.0",
+      "CommunityToolkit.Aspire.Hosting.SQLite >= 13.4.0",
       "NSwag.AspNetCore >= 14.7.1"
     ]
   },
@@ -4301,6 +4337,10 @@
             "autoReferenced": true
           },
           "CommunityToolkit.Aspire.Hosting.Ollama": {
+            "target": "Package",
+            "version": "[13.4.0, )"
+          },
+          "CommunityToolkit.Aspire.Hosting.SQLite": {
             "target": "Package",
             "version": "[13.4.0, )"
           },

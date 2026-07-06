@@ -10,6 +10,7 @@
         "dependencies": {
           "Aspire.Hosting.AppHost": "13.4.4",
           "CommunityToolkit.Aspire.Hosting.Ollama": "13.4.0",
+          "CommunityToolkit.Aspire.Hosting.Sqlite": "13.4.0",
           "NSwag.AspNetCore": "14.7.1"
         },
         "runtime": {
@@ -125,6 +126,17 @@
         },
         "runtime": {
           "lib/net10.0/CommunityToolkit.Aspire.Hosting.Ollama.dll": {
+            "assemblyVersion": "13.4.0.0",
+            "fileVersion": "13.4.0.0"
+          }
+        }
+      },
+      "CommunityToolkit.Aspire.Hosting.Sqlite/13.4.0": {
+        "dependencies": {
+          "Aspire.Hosting": "13.4.4"
+        },
+        "runtime": {
+          "lib/net10.0/CommunityToolkit.Aspire.Hosting.Sqlite.dll": {
             "assemblyVersion": "13.4.0.0",
             "fileVersion": "13.4.0.0"
           }
@@ -789,6 +801,13 @@
       "sha512": "sha512-1z9ADu8SJ54Lyyn8MwX+Ih3tdO7tAeIx9fSpmyldeU0W2j7DSsgov7gNbXWp5ih9uQrSEaTBG0HT0Anpfd+xLg==",
       "path": "communitytoolkit.aspire.hosting.ollama/13.4.0",
       "hashPath": "communitytoolkit.aspire.hosting.ollama.13.4.0.nupkg.sha512"
+    },
+    "CommunityToolkit.Aspire.Hosting.Sqlite/13.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LZ7RGVdbdeajprDvseRcsJY5B3OPwDUnAhnN98bV8LmNwI/J40vZeab9EQHOwDpctGCh2shNYDw12dCcLJSJvA==",
+      "path": "communitytoolkit.aspire.hosting.sqlite/13.4.0",
+      "hashPath": "communitytoolkit.aspire.hosting.sqlite.13.4.0.nupkg.sha512"
     },
     "Fractions/7.3.0": {
       "type": "package",

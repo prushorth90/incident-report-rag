@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "udJ5NXBp5tY=",
+  "dgSpecHash": "s/rRI8c6pgg=",
   "success": true,
   "projectFilePath": "/Users/prush/Desktop/incident-report-rag/AspireApp1/AspireApp1.AppHost/AspireApp1.AppHost.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "/Users/prush/.nuget/packages/aspire.hosting.orchestration.osx-arm64/13.4.4/aspire.hosting.orchestration.osx-arm64.13.4.4.nupkg.sha512",
     "/Users/prush/.nuget/packages/aspnetcore.healthchecks.uris/9.0.0/aspnetcore.healthchecks.uris.9.0.0.nupkg.sha512",
     "/Users/prush/.nuget/packages/communitytoolkit.aspire.hosting.ollama/13.4.0/communitytoolkit.aspire.hosting.ollama.13.4.0.nupkg.sha512",
+    "/Users/prush/.nuget/packages/communitytoolkit.aspire.hosting.sqlite/13.4.0/communitytoolkit.aspire.hosting.sqlite.13.4.0.nupkg.sha512",
     "/Users/prush/.nuget/packages/fractions/7.3.0/fractions.7.3.0.nupkg.sha512",
     "/Users/prush/.nuget/packages/google.protobuf/3.34.1/google.protobuf.3.34.1.nupkg.sha512",
     "/Users/prush/.nuget/packages/grpc.aspnetcore/2.80.0/grpc.aspnetcore.2.80.0.nupkg.sha512",
