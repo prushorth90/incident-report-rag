@@ -2,6 +2,7 @@ using System.Reflection.Metadata.Ecma335;
 
 var builder = DistributedApplication.CreateBuilder(args);
 var ollama = builder.AddOllama("ollama").WithDataVolume();
+var embeddings = ollama.AddModel("embeddings","all-minilm");
 var chatModel = ollama.AddModel("chat", "llama3.2");
 
 //builder.AddContainer("open-webui", "ghcr.io/open-webui/open-webui", "main")
@@ -14,6 +15,8 @@ builder.AddProject<Projects.IcmChatAPI>("icmchatapi")
     .WithReference(chatModel)
     .WaitFor(chatModel);
  
- builder.AddProject<Projects.IngestionService>("ingestionservice");
+ builder.AddProject<Projects.IngestionService>("ingestionservice")
+ .WithReference(embeddings)
+ .WaitFor(embeddings);
 
 builder.Build().Run();
