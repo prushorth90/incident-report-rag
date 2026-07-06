@@ -21,7 +21,7 @@ public class Worker(ILoggerFactory loggerFactory, ILogger<Worker> logger) : Back
                     string.Join(", ", filesToProcess.Select(f => f.Name)));
             }
 
-            var pipeline = new IngestionPipeline<string>(reader: new IcmReader(), chunker: null, writer: null, loggerFactory: loggerFactory);
+            var pipeline = new IngestionPipeline<string>(reader: new IcmReader(), chunker: new SemanticSimilarityChunker(null, null), writer: null, loggerFactory: loggerFactory);
 
             await foreach (var result in pipeline.ProcessAsync(filesToProcess, stoppingToken))
             {
